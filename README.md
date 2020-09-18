@@ -5,6 +5,9 @@ This allows you to use Segger Embedded Studio to Develop/Edit/Compile/Debug your
 
 The converter is written in Python, and verified with Python 3.8.x (but should work for other versions out-of-the-box).
 
+Both the Makefile and the Segger emProject files are simple text files, so it's quite easy and straightforward to do the conversion.
+Segger Embedded Studio is also a very nice lightweight IDE - I'm a bit surprised that Mbed doesn't support exporting to Segger by default.
+
 # Prerequisites for Example
 
 Installed on your development computer:
