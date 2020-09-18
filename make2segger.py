@@ -329,7 +329,7 @@ xml += "	external_cpp_compile_command=\"&quot;$(ToolChainDir)/arm-none-eabi-g++&
 xml += "	external_cpp_link_command=\"&quot;$(ToolChainDir)/arm-none-eabi-gcc&quot; $(LinkOptions) -T &quot;$(RelLinkerScriptPath)&quot; --output &quot;$(RelTargetPath)&quot; @$(ObjectsFilePath)\"\n";
 xml += "    external_objects_file_name=\"$(OutDir)/.link_options.txt\"\n";
 #xml += "    link_linker_script_file=\"" + linker_script + "\"\n";
-xml += "    link_linker_script_file=\"$(OutDir)/mbednew-makefile.link_script.ld\"\n";
+xml += "    link_linker_script_file=\"$(OutDir)/" + projectname + ".link_script.ld\"\n";
 xml += "    link_use_linker_script_file=\"Yes\"\n";
 xml += "    linker_additional_options=\"" + ld_flags + " " + ld_sys_libs + "\"\n";
 xml += "    linker_pre_build_command=\"" + "&quot;$(ToolChainDir)&quot;/" + preproc + " " + linker_script1 + " -o $(OutDir)/" + projectname + ".link_script.ld" + "\"\n";
