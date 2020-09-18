@@ -24,6 +24,7 @@ In your bash/cmd/powershell, do:
 
 1: Create the Makefile based Mbed OS Project
 - mbed new segger-helloworld
+- cd segger-helloworld
 - mbed update mbed-os-6.3.0
 - mbed export -i make_gcc_arm -m NUCLEO_F303K8
 
