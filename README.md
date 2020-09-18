@@ -37,4 +37,4 @@ Installed on your development computer:
 3: Open and compile the project in Segger Embedded Studio
 - Open the newly created "segger-helloworld.emProject" in Segger Embedded Studio
 - Manually add the "main.cpp" file to the project by right clicking on the Project and choosing "Add Existing File"
-- Build the Project and you should be presented with a compiled binary (.elf)
+- Build the Project and you should be presented with a compiled binary (.elf), which can be downloaded onto your embedded board and will blink a LED.
