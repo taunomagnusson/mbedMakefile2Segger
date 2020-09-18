@@ -47,4 +47,4 @@ Installed on your development computer:
 # Open Issues, Caveats, Workarounds
 - There is currently an issue the first time you build: The Linker will give you a "cannot open linker script file $(RelLinkerScriptPath): No such file or directory" Error. Just "Build" one more time and it will work.
 - There is  no "Build/Clean" command generated. To clean the project, you can manually delete the "Output" directory (or a "rm -rf" command in the Segger Embedded Studio options for the Project). Note that you MUST create a new Output/Debug/Exe directory for the linker to work (mkdir Output; mkdir Output/Debug; mkdir Output/Debug/Exe)
-- If you get Pre-Link Command Error "opening output file Output/Debug/Exe/segger-helloworld.link_script.ld: No such file or directory" you probably forgot to create the Output/Debug/Exe directory.
+- If you get Pre-Link Command Error "opening output file Output/Debug/Exe/segger-helloworld.link_script.ld: No such file or directory" you probably forgot to create the Output/Debug/Exe directory before trying to build.
