@@ -3,6 +3,10 @@ Converts an ARM Mbed OS Makefile Project into a Segger Embedded Studio Project.
 
 This allows you to use Segger Embedded Studio to Develop/Edit/Compile/Debug your ARM Mbed OS projects.
 
+It has been tested with:
+ARM MBed OS 6.2 and 6.3
+Segger Embedded Studio 5.10
+
 The converter is written in Python, and verified with Python 3.8.x (but should work for other versions out-of-the-box).
 
 Both the Makefile and the Segger emProject files are simple text files, so it's quite easy and straightforward to do the conversion.
