@@ -42,7 +42,7 @@ Installed on your development computer:
 - Open the newly created "segger-helloworld.emProject" in Segger Embedded Studio
 - Manually add the "main.cpp" file to the project by right clicking on the Project and choosing "Add Existing File"
 - Build the Project and you should be presented with a compiled binary (.elf), which can be downloaded onto your embedded board and will blink a LED.
-- NOTE: There is currently an open issue the first time you build. You will get an error from the linker. Just "Build" again and it should work (see below in Open Issues)
+- WARNING: There is currently an open issue the first time you build. You will get an error from the linker. Just "Build" again and it should work (see below in Open Issues)
 
 # Open Issues, Caveats, Workarounds
 - There is currently an issue the first time you build: The Linker will give you a"/Applications/ARM/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: cannot open linker script file $(RelLinkerScriptPath): No such file or directory" Error. Just "Build" one more time and it will work.
