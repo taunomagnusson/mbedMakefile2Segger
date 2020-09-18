@@ -28,7 +28,7 @@ In your bash/cmd/powershell, do:
 - Download (directly from GitHub or using git) and Copy the "make2segger.py" and "main.cpp" files into the newly created "segger-helloworld" directory.
 - Open the "make2segger.py" script in a texteditor and update "gnu_toolchain_directory" to point to the "bin" directory of your installed GNU ARM Embedded toolchain.
 - Run "python3 make2segger.py". Review the statistics, did you have any "Failure" in the statistics?
-- Small Failures are usually easy to fix manually. Edit "make2segger.py" and set "DEBUG = True". This will dump out the linenumber in the Makefile that filed to parse. Check the line number, it might be easy to manually add it later in Segger Embedded Studio.
+- Small Failures are usually easy to fix manually. Edit "make2segger.py" and set "DEBUG = True". This will dump out the any linenumbers in the Makefile that failed to parse. Check the Makefile text on that line number, it might be easy to manually add it later in Segger Embedded Studio.
 - You should now have a newly created Segger .emProject file
 
 3: Open and compile the project in Segger Embedded Studio
