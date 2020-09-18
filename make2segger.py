@@ -332,7 +332,7 @@ xml += "    external_objects_file_name=\"$(OutDir)/.link_options.txt\"\n";
 xml += "    link_linker_script_file=\"$(OutDir)/mbednew-makefile.link_script.ld\"\n";
 xml += "    link_use_linker_script_file=\"Yes\"\n";
 xml += "    linker_additional_options=\"" + ld_flags + " " + ld_sys_libs + "\"\n";
-xml += "    linker_pre_build_command=\"" + "&quot;$(ToolChainDir)&quot;/" + preproc + linker_script1 + " -o $(OutDir)/" + projectname + ".link_script.ld" + "\"\n";
+xml += "    linker_pre_build_command=\"" + "&quot;$(ToolChainDir)&quot;/" + preproc + " " + linker_script1 + " -o $(OutDir)/" + projectname + ".link_script.ld" + "\"\n";
 xml += """\
     external_build_command=""
     external_clean_command=""
