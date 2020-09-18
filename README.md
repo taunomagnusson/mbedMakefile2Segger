@@ -40,4 +40,4 @@ Installed on your development computer:
 - Build the Project and you should be presented with a compiled binary (.elf), which can be downloaded onto your embedded board and will blink a LED.
 
 # Open Issues, Caveats, Workarounds
-- There is  no "Build/Clean" command generated. To clean the project, you can delete the "Output" directory.
+- There is  no "Build/Clean" command generated. To clean the project, you can manually delete the "Output" directory (or a "rm -rf" command in the Segger Embedded Studio options for the Project).
