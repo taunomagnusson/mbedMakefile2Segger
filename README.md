@@ -25,7 +25,7 @@ In your bash/cmd/powershell, do:
 1: Create the Makefile based Mbed OS Project
 - mbed new segger-helloworld
 - mbed update mbed-os-6.3.0
-- mbed export -i make_gcc_arm NUCLEO_F303K8
+- mbed export -i make_gcc_arm -m NUCLEO_F303K8
 
 2: Install and execute the make2segger.py converter script
 - Download (directly from GitHub or using git) and Copy the "make2segger.py" and "main.cpp" files into the newly created "segger-helloworld" directory.
