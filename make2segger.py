@@ -6,6 +6,8 @@ import time;
 # General Settings
 
 gnu_toolchain_directory = "C:\\Program Files (x86)\\GNU Tools Arm Embedded\\9 2019-q4-major\\bin";
+# gnu_toolchain_directory = "/Applications/ARM/bin";
+
 
 # Debug Settings
 
