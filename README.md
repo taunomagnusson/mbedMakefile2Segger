@@ -22,7 +22,7 @@ Installed on your development computer:
 
 
 1: Create the Makefile based Mbed OS Project
-In your bash/cmd/powershell, do:
+- In your bash/cmd/powershell, do:
 - mbed new segger-helloworld
 - cd segger-helloworld
 - mbed update mbed-os-6.3.0
