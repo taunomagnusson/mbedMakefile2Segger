@@ -34,6 +34,11 @@ In your bash/cmd/powershell, do:
 - Small Failures are usually easy to fix manually. Edit "make2segger.py" and set "DEBUG = True". This will dump out the any linenumbers in the Makefile that failed to parse. Check the Makefile text on that line number, it might be easy to manually add it later in Segger Embedded Studio.
 - You should now have a newly created Segger .emProject file
 
-3: Open and compile the project in Segger Embedded Studio
+3: Manually setup the Linker Script
+- In segger-helloworld, create the "Output/Debug/Exe" directory chain. (mkdir Output; mkdir Output/Debug; mkdir Output/Debug/exe)
+- Copy the linker script for your target to the "Output/Debug/Exe" directory and rename it to "segger-helloworld.link_script.ld"
+- (For NUCLEO-F303K8, do the following: "cp mbed-os/targets/TARGET_STM/TARGET_STM32F3/TARGET_STM32F303x8/device/TOOLCHAIN_GCC_ARM/STM32F303X8.ld Output/Debug/Exe/segger-helloworld.link_script.ld)
+
+4: Open and compile the project in Segger Embedded Studio
 - Open the newly created "segger-helloworld.emProject" in Segger Embedded Studio
 - If you had any Failures above (For example in Include PATHS), manually review them and update in Segger Embedded Studio
